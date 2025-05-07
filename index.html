@@ -11,6 +11,9 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
+  <!-- supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.min.js"></script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -20,12 +23,10 @@
       <source src="Z6.mp4" type="video/mp4" />
     </video>
   </div>
-  
 
-  <div class="container">
-    <h2>Enter Access Code</h2>
-    <input type="text" id="fileCode" placeholder="e.g. file1, docx, file2..." />
-    <button onclick="redirectToFile()">Go</button>
+  <div class="file-manager-container">
+    <h2>File Manager</h2>
+    <div id="fileManager" class="file-manager"></div>
   </div>
 
   <!-- JS -->
